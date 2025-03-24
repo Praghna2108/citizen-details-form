@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(159, 156, 156);
+    text-align: center;
+  }
+  .container{
+    background-color:#bab8cd;
+    border-radius: 15px;
+    box-shadow: 0 0 20px black;
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 370px;
+  }
+  
+  h1{
+    padding-top: 6px;
+    padding-bottom: 15px;
+    font-family: poppins;
+    font-size: xx-large;
+    text-align: center;
+    color:rgb(73, 73, 154)
+
+  }
+  .name-container {
+    display: flex;
+    gap: 13px;
+  }
+
+  .name-field {
+    flex: 1;
+}
+  
+  label{
+    font-family:poppins;
+    font-size: 17px;
+    display:block;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color:rgb(73, 73, 154);
+    font-weight: bolder;
+    padding: 2px;
+  }
+  
+  input{
+    display:block;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border:1px none #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  
+  input[type="radio"]{
+    display: inline;
+    width: 10%;
+
+  }
+  
+  textarea{
+    font-family:poppins;
+    resize: none;
+    width: 99%;
+    min-height: 100px;
+    max-height: 150px;
+    border:1px none #ddd;
+    border-radius: 5px;
+  }
+  button{
+    font-family:poppins;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(73, 73, 154);
+    width: 40%;
+    font-size: 18px;
+  }
+  button:hover {
+    background-color: rgb(55, 55, 115);
+  }
