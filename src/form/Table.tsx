@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Form from './Form';
+import "./Table.css"
  
-const TableDetails: React.FC = () => {
+const Table: React.FC = () => {
   const [users, setUsers] = useState<any[]>([]);
   const navigate = useNavigate();
  
@@ -11,10 +13,15 @@ const TableDetails: React.FC = () => {
   }, []);
  
   return (
-    <div>
-      <h2>User List</h2>
-      <button onClick={() => navigate("/add-user")}>Add New User</button>
-     
+    <div className="table-container">
+      <title>Citizen's Information</title>
+      <div className="h2-container">
+            <div className="inner-container">
+                <h2>CITIZEN DETAILS TABLE</h2>
+                <button className="table-button" onClick={() => navigate("/Form")}>+ New User</button>
+            </div>
+      </div>
+      
       <table border={1}>
         <thead>
           <tr>
@@ -23,29 +30,29 @@ const TableDetails: React.FC = () => {
             <th>Age</th>
             <th>DOB</th>
             <th>Aadhar</th>
-            <th>Pancard</th>
+            <th>Pan Card</th>
             <th>Gender</th>
             <th>Address</th>
-            <th>Phone</th>
-            <th>father Name</th>
-            <th>Mother Name</th>
+            <th>Phone Number</th>
+            <th>Father's Name</th>
+            <th>Mother's Name</th>
             <th>Education</th>
           </tr>
         </thead>
         <tbody>
           {users.map((user, index) => (
             <tr key={index}>
-              <td>{user.firstName}</td>
-              <td>{user.lastName}</td>
+              <td>{user.firstname}</td>
+              <td>{user.lastname}</td>
               <td>{user.age}</td>
               <td>{user.dob}</td>
               <td>{user.aadhar}</td>
-              <td>{user.pancard}</td>
+              <td>{user.pan}</td>
               <td>{user.gender}</td>
               <td>{user.address}</td>
-              <td>{user.phone}</td>
-              <td>{user.fatherName}</td>
-              <td>{user.motherName}</td>
+              <td>{user.phonenumber}</td>
+              <td>{user.fathersName}</td>
+              <td>{user.mothersName}</td>
               <td>{user.education}</td>
             </tr>
           ))}
@@ -55,4 +62,4 @@ const TableDetails: React.FC = () => {
   );
 };
  
-export default TableDetails;
+export default Table;
