@@ -19,7 +19,7 @@ body {
     padding-top: 6px;
     padding-bottom: 15px;
     font-family: poppins;
-    font-size: xx-large;
+    font-size:xx-large;
     text-align: center;
     color:rgb(73, 73, 154)
 
@@ -59,7 +59,7 @@ body {
   
   input[type="radio"]{
     display: inline;
-    width: 10%;
+    width: 5%;
 
   }
   
@@ -87,3 +87,4 @@ body {
   button:hover {
     background-color: rgb(55, 55, 115);
   }
+ 

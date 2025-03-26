@@ -7,31 +7,54 @@ body {
     flex-direction: column;
     padding-top: 20px;
     min-height: 100vh;
+    padding-left:40px;
+    padding-right:40px;
 }
 .h2-container{
     display: flex;
-    gap:30px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 .inner-container{ 
     flex:1;
 }
 h2{
     margin: 0;
+    font-size: xx-large;
 }
-table-button{
-    padding: 10px 15px;
+.search-bar {
+    padding: 9px 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
     border-radius: 6px;
-    margin: 15px;
+    outline: none;
+    width: 20%;
+}
+
+.search-bar:focus {
+    border-color: rgb(73, 73, 154);
+}
+
+.no-data {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+.table-button {
+    padding: 9px;
+    border-radius: 6px;
     border: none;
     color: white;
     cursor: pointer;
     background-color: rgb(73, 73, 154);
-    width: 10%;
     font-size: 18px;
+    width: 10%;
 }
 
-table-button:hover{
-    background-color:rgb(64, 64, 151);
+.table-button:hover {
+    background-color: rgb(64, 64, 151);
 }
 table {
     border-collapse: collapse;
@@ -48,5 +71,38 @@ th{
 }
 
 td{
-    background: color #f2f2f2;
+    background-color: #f2f2f2;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(73, 73, 154);
+    color: white;
+    width:15%;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+    font-weight: bold;
 }
